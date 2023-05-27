@@ -17,7 +17,7 @@
     height: 100%;
     opacity: 0.65;
     z-index: -1;
-    background-image: url(imgs/gra.jpg);
+    background-image: url(../imgs/gra.jpg);
     background-size: 940px;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -92,7 +92,7 @@ body {
 }
 
 header {
-    background-image: url(imgs/back1.jpg);
+    background-image: url(../imgs/back1.jpg);
     background-position: bottom;
     display: flex;
     align-items: center;
@@ -293,7 +293,7 @@ footer {
 
     iframe { 
         width: auto;
-        altura : 160px; 
+        altura : 155px; 
     }    
 }
 

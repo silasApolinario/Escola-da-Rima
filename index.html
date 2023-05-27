@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonte inter -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <!-- fonte maker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/escola_da_rima/imgs/icons8-barrier-64.ico" type="image/x-icon">
+    <!-- https://icons8.com/icons/authors/3ayxolOIttPV/xnimrodx/external-xnimrodx-lineal-color-xnimrodx  -->
+    
+    <title>Escola da Rima</title>
+</head>
+<body>
+  
+    <div id="help" >
+        
+        <ol>
+          <button onclick="fechar()">Fechar</button>
+                <h2>Passo a passo para iniciantes na EDR</h2>
+            <li>
+              Inicie no modo manual, sem beat tocando falando em voz alta apenas frases lógicas sem se preocupar em rimar, utilizando a palavra que aparece no display, levando o tempo que precisar para mudar para a próxima palavra.
+            </li>
+            <li>
+              Depois de ganhar mais confiança no primeiro passo ao conseguir criar frases lógicas utilizando as palavras disponíveis no display, neste passo você começará a se preocupar em rimar as palavras no final das frases, mas ainda mantendo no modo manual e sem beat.
+            </li>
+            <li>
+              Aqui, no terceiro passo, você já deve colocar um beat para tocar e continuar em modo manual, e já aplicar ritmo no seu flow para sincronizar com o ritmo do beat.
+            </li>
+            <li>
+              No quarto e último passo, você deve utilizar o display no modo automático e ir progredindo a velocidade com que as palavras se alteram no display.
+            </li>
+            
+            <p style="text-align: center;"> <em> "O preço da perfeição é a prática constante."</em></p>
+          </ol>
+
+    </div>
+
+    <div id="doacao">
+      <br>
+      <button onclick="fecharDo()">Fechar</button>
+      <p>A plataforma Escola da Rima é totalmente gratuita. Acreditamos que o poder da oratória tem a força para mudar vidas! Por isso, desenvolvemos esta ferramenta e trabalhamos para o acesso de todos. Caso você tenha condições e queira contribuir conosco, nos envie um PIX.
+        <br><br>
+        "A comunicação é o pilar mais importante da evolução humana."</p>
+        
+      <p class="pix">
+      PIX: escola_rima@gmail.com</p><br>
+      <img src="/escola_da_rima/imgs/5conto.jpg" alt="nota 5 reais">
+      <img src="/escola_da_rima/imgs/10conto.png" alt="nota 1000 reais">
+    </div>
+
+
+    <header>
+        <img src="/escola_da_rima/imgs/logo.png"> 
+    </header>
+
+    
+
+    <div id="back">
+        <img class="money" src="/escola_da_rima/imgs/money.png" alt="doacao" onclick="doacao()">
+        <img class="help" src="/escola_da_rima/imgs/help.png" alt="ajuda" title="Clique aqui para obter ajuda" onclick="help()">
+        
+
+
+        <main>
+            <button id="aut" onclick="iniciarIntervalo()" class="BT1">Automático</button>
+            <button id="manu" onclick="desativarIntervalo()" class="BT1">Manual</button>
+
+            <div>
+                <p id="tela"></p>
+            </div>
+
+            <div id="tempSegundos">
+            <button onclick="diminuirTempo()" class="btn-seg">-</button>
+            <p id="telaIntervalo" class="segundos" style="color: white;">3.5 Seg</p>
+            <button onclick="aumentarTempo()" class="btn-seg">+</button><br>
+            </div>   
+
+            <button id="proxima" onclick="exibirPalavraAleatoria()" style="display: none;">Próxima</button>
+            <br> 
+            <a id="beat" target="_blank" href="https://instagram.com/escola_rima?igshid=MzNlNGNkZWQ4Mg%3D%3D">Quer ter seu Beat na nossa Playlist?</a>
+            
+        </main> 
+        
+        
+        <section>
+          
+            <iframe width="400" height="220" src="https://www.youtube.com/embed/videoseries?list=PLcK3qDubUkzsW7hfGQW0I3bhjREsWsCQn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        
+        <footer>
+            <p>Escola da Rima - EDR ®
+                <br>
+                Desenvolvido para impactar e mudar vidas.
+                <br><em> Todos os direitos reservados. </em> ©</p>
+        </footer>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
